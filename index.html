@@ -32,5 +32,26 @@
         systems. In this case, we will be using Windows 10 and Ubuntu.
       </li>
     </ul>
+
+    <h3>Create and install the Virtual Machines</h3>
+    <ul>
+      <li>
+        Launch VirtualBox and create two new virtual machines. For each one, I
+        allocate at least 4GB of RAM and two CPU cores, and a sufficient virtual
+        hard disk size. For this case, I used 50GB.
+      </li>
+      <img src="/images/ram and cpu.png" alt="" />
+      <li>
+        Mount the respective ISO file to each VM's virtual optical drive and
+        power on the VM to begin the standard operating system installation
+        process.
+      </li>
+      <li>
+        After the OS is installed on each VM, install the hypervisor's "Guest
+        Additions". This is crucial as it installs necessary drivers for better
+        performance, screen resolution, and smooth integration with the host
+        machine.
+      </li>
+    </ul>
   </body>
 </html>
