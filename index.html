@@ -3,12 +3,34 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Virtualization</title>
   </head>
   <body>
-    <h1>check check</h1>
-    <p>is this thing on</p>
-
-    <h6>I hope it is....but what if not</h6>
+    <h1>Virtualized Help Desk Environment Setup</h1>
+    <p>
+      The objective is to configure a client-side Type 2 Hypervisor using
+      VirtualBox and deploy two networked Virtual Machines — one Windows and one
+      Linux— to demonstrate core A+ skills, including virtualization, IP
+      configuration, and basic security hardening.
+    </p>
+    <h3>Install and configure the hypervisor</h3>
+    <ul>
+      <li>
+        Download and install a hypervisor onto your host operating system. In
+        this case, we will use VirtualBox.
+      </li>
+      <li>
+        Verify that Hardware Assisted Virtualization is enabled in the host
+        computer's BIOS/UEFI settings. Without this, the VMs will run poorly or
+        not at all. A quick way to check is by opening Task Manager, going to
+        the Performance tab, choose CPU and check if Virtualization is enabled.
+      </li>
+      <img src="/images/task manager.jpg" alt="" />
+      <li>
+        Download the ISO installation files for the two client operating
+        systems. In this case, we will be using Windows 10 and Ubuntu.
+      </li>
+    </ul>
   </body>
 </html>
