@@ -13,16 +13,11 @@ h1 {
 }
 
 div {
-  /* border: 20px solid black; */
   width: 800px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
-/* img {
-  max-width: 100%;
-} */
 
 div img {
   max-width: 100%;
