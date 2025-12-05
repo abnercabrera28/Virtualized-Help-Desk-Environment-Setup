@@ -20,13 +20,18 @@
         Download and install a hypervisor onto your host operating system. In
         this case, we will use VirtualBox.
       </li>
+      <div>
+        <img src="images/virtual box.png" alt="" />
+      </div>
       <li>
         Verify that Hardware Assisted Virtualization is enabled in the host
         computer's BIOS/UEFI settings. Without this, the VMs will run poorly or
         not at all. A quick way to check is by opening Task Manager, going to
         the Performance tab, choose CPU and check if Virtualization is enabled.
       </li>
-      <img src="/images/task manager.jpg" alt="" />
+      <div>
+        <img src="/images/task manager.jpg" alt="" />
+      </div>
       <li>
         Download the ISO installation files for the two client operating
         systems. In this case, we will be using Windows 10 and Ubuntu.
@@ -40,7 +45,9 @@
         allocate at least 4GB of RAM and two CPU cores, and a sufficient virtual
         hard disk size. For this case, I used 50GB.
       </li>
-      <img src="/images/ram and cpu.png" alt="" />
+      <div>
+        <img src="/images/ram and cpu.png" alt="" />
+      </div>
       <li>
         Mount the respective ISO file to each VM's virtual optical drive and
         power on the VM to begin the standard operating system installation
@@ -52,7 +59,9 @@
         performance, screen resolution, and smooth integration with the host
         machine.
       </li>
-      <img src="images/guest additions.png" alt="" />
+      <div>
+        <img src="images/guest additions.png" alt="" />
+      </div>
     </ul>
 
     <h3>Configure Network Settings</h3>
@@ -65,16 +74,20 @@
         through the host's IP address while remaining isolated from the rest of
         my local area network.
       </li>
-      <img src="images/create network.png" alt="" />
-      <img src="images/NAT network.png" alt="" />
+      <div>
+        <img class="create-network" src="images/create network.png" alt="" />
+        <img src="images/NAT network.png" alt="" />
+      </div>
       <li>
         While DHCP is standard, I will manually set a static IP address on both
         VMs within the hypervisor's NAT network range. On both VMs, go to the
         network settings and set the IP address, subnet mask, and a default
         gateway.
       </li>
-      <img src="images/static IP windows.png" alt="" />
-      <img src="images/static IP linux.png" alt="" />
+      <div>
+        <img src="images/static IP windows.png" alt="" />
+        <img src="images/static IP linux.png" alt="" />
+      </div>
       <li>
         Use the command prompt or Powershell in Windows and Terminal in Ubuntu
         to execute the
@@ -82,13 +95,17 @@
         communication. You could also use <b>ipconfig /all</b> in Windows and
         <b>ip a</b> in Ubuntu to verify the assigned IP addresses.
       </li>
-      <img src="images/pinging from windows.png" alt="" />
-      <img src="images/pinging from linux.png" alt="" />
+      <div>
+        <img src="images/pinging from windows.png" alt="" />
+        <img src="images/pinging from linux.png" alt="" />
+      </div>
       <li>
         If there are any problems with pinging between machines, check your
         firewall settings to make sure inbound echo requests are enabled.
       </li>
-      <img src="images/firewall inbound rule.png" alt="" />
+      <div>
+        <img src="images/firewall inbound rule.png" alt="" />
+      </div>
     </ul>
 
     <h3>System Hardening and Security</h3>
@@ -105,13 +122,17 @@
         Verify that the firewalls are active on both VMs and configured to block
         non-essential incoming traffic.
       </li>
-      <img src="images/firewall on windows.png" alt="" />
-      <img src="images/firewall linux verbose.png" alt="" />
+      <div>
+        <img src="images/firewall on windows.png" alt="" />
+        <img src="images/firewall linux verbose.png" alt="" />
+      </div>
       <li>
         Identify and disable unnecessary services that could be exploited like
         Telnet, if not required.
       </li>
-      <img src="images/telnet.png" alt="" />
+      <div>
+        <img src="images/telnet.png" alt="" />
+      </div>
     </ul>
   </body>
 </html>
